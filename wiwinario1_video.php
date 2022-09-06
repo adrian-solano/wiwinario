@@ -65,9 +65,6 @@
                     <span class="client-hashtag">#cuestionario</span>
                 </div>
             </section><!-- .subheader -->
-            <div class='count-question'>
-                <p>Pregunta <span class='qidx'>1</span> de <span class='qLength'>5</span></p>
-            </div>
         </section><!-- .section header -->
 
         <section class="section-middle">
@@ -75,7 +72,12 @@
                 <span class="screen-wrap scroll">
                     <div class="landing-form cuestionario" id="formulario">
 
-                        <h2>Primer acercamiento</h2>
+                        <div>
+                            <h2>Primer acercamiento</h2>
+                            <div class='count-question'>
+                                <p>Pregunta <span class='qidx'>1</span> de <span class='qLength'>5</span></p>
+                            </div>
+                        </div>
 
                         <input type="hidden" name="camp_id" id="camp_id" value="34">
                         <input type="hidden" name="client_id" id="client_id" value="14">
