@@ -215,7 +215,7 @@
 
                             <div class="full">
                                 <label>¿Alguna vez no has bajado en la parada que te corresponde?</label>
-                                <div class="group columns center">
+                                <div class="group rows center">
                                     <div class="radio small">
                                         <input type="radio" name="p6" value="Sí" class="radio-element" data-child="2" required="">
                                         <label class="sub">Sí</label>
@@ -370,6 +370,7 @@
 
                             document.querySelector(`.row[data-id='${qIndex}']`).classList.add('off');
 
+                            console.log(qIndex);
                             if (arrayParent.find(function (e) { return e == qIndex })) {
                                 if (q.dataset.child != undefined) {
                                     --qIdx;
@@ -397,7 +398,8 @@
                 button.classList.add("loading");
                 button.value = "Cargando... ";
                 setTimeout(function () {
-                    button.click();
+                    // button.click();
+                    form.submit()
                 }, 2000);
             }
 
@@ -405,6 +407,8 @@
 
                 let contents = document.querySelectorAll('.row')
                 let numQ = 1;
+
+                console.log(contents);
                 
                 contents.forEach(function (element, index) {
 
@@ -422,17 +426,15 @@
                     ++idx;
 
                     if (element.dataset.parent != undefined) {
-                        arrayParent.push(numQ)
-                        // numQ = numQ + parseInt(element.dataset.parent);
-                        // console.log(numQ);
+                        arrayParent.push(parseInt(element.dataset.id) - 1);
                     } else {
+                        numQuestions = numQ;
                         ++numQ;
                     }
 
                 });
 
                 numQuestionsReal = contents.length;
-                numQuestions = numQ;
                 document.querySelector(`.qLength`).textContent = numQuestions;
 
                 handleQuestion(1, 1);                
