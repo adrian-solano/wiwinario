@@ -790,9 +790,6 @@ input[type=text], input[type=button] {
 .main.master .screen .screen-wrap .cuestionario .row > div > label {
   text-align: center;
 }
-.main.master .screen .screen-wrap .cuestionario .row[data-parent] {
-  display: none;
-}
 .main.master .screen .screen-wrap .cuestionario .row[data-parent].on {
   display: block;
 }

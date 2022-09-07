@@ -75,7 +75,7 @@
                         <div>
                             <h2>Primer acercamiento</h2>
                             <div class='count-question'>
-                                <p>Pregunta <span class='qidx'>1</span> de <span class='qLength'>5</span></p>
+                                <p>Pregunta <span class='qidx'></span> de <span class='qLength'></span></p>
                             </div>
                         </div>
 
@@ -100,165 +100,164 @@
 
 
 
-                        <div class="row" id='q1'>
+                        <div class="row">
                             <div class="full">
-                                <label>¿Cuántos años tienes?</label>
-                                <div class="group rows center">
+                                <label>¿Qué haces cuando no sabes que ruta tomar? </label>
+                                <div class="group columns">
                                     <div class="radio small">
-                                        <input type="radio" name="p1" value="-18" class="radio-element q1" required="">
-                                        <label class="sub">-18</label>
+                                        <input type="radio" name="p1" value="Preguntar a una persona" class="radio-element" required="">
+                                        <label class="sub">Preguntar a una persona</label>
                                     </div>
                                     <div class="radio small">
-                                        <input type="radio" name="p1" value="18+" class="radio-element q1" required="">
-                                        <label class="sub">18+</label>
+                                        <input type="radio" name="p1" value="Preguntarle al conductor" class="radio-element" required="">
+                                        <label class="sub">Preguntarle al conductor</label>
                                     </div>
                                     <div class="radio small">
-                                        <input type="radio" name="p1" value="25+" class="radio-element q1" required="">
-                                        <label class="sub">25+</label>
+                                        <input type="radio" name="p1" value="Buscar en google maps" class="radio-element" required="">
+                                        <label class="sub">Buscar en google maps</label>
                                     </div>
                                     <div class="radio small">
-                                        <input type="radio" name="p1" value="35+" class="radio-element q1" required="">
-                                        <label class="sub">35+</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p1" value="45+" class="radio-element q1" required="">
-                                        <label class="sub">45+</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p1" value="55+" class="radio-element q1" required="">
-                                        <label class="sub">55+</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p1" value="65+" class="radio-element q1" required="">
-                                        <label class="sub">65+</label>
+                                        <input type="radio" name="p1" value="Otros:" class="radio-element" required="">
+                                        <label class="sub">Otros</label>
                                     </div>
 
                                 </div><!-- .group  -->
                             </div><!-- .full -->
                         </div><!-- .row -->
-                        <div class="row off" id='q2'>
+                        <div class="row">
 
                             <div class="full">
-                                <label>¿Con qué frecuencia utilizas el autobús?</label>
-                                <div class="group columns center">
-                                    <div class="radio small">
-                                        <input type="radio" name="p2" value="1-2" class="radio-element q2" required="">
-                                        <label class="sub">1-2 veces a la semana</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p2" value="3-4" class="radio-element q2" required="">
-                                        <label class="sub">3-4 veces a la semana</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p2" value="5+" class="radio-element q2" required="">
-                                        <label class="sub">5 o más veces a la semana</label>
-                                    </div>
-
-                                </div><!-- .group  -->
-                            </div>
-                        </div><!-- .row -->
-                        <div class="row off" id='q3'>
-                            <div class="full">
-                                <label>¿Tienes hijos?</label>
-                                <div class="group rows center has-conditional" >
-                                    <div class="radio small">
-                                        <input type="radio" name="p3" value="si" class="radio-element conditional-value q3" data-child="1" required="">
-                                        <label class="sub">Sí</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p3" value="no" class="radio-element q3" required="">
-                                        <label class="sub">No</label>
-                                    </div>
-                                </div><!-- .group  -->
-                            </div>
-                        </div><!-- .row -->
-                        <div class="row off" id='q4' data-parent="1">
-                            <div class="full">
-                                <label>¿Cuántos hijos tienes?</label>
-                                <div class="group rows center has-parent" >
-                                    <div class="radio small">
-                                        <input type="radio" name="p4" value="1" class="radio-element q4" >
-                                        <label class="sub">1</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p4" value="2" class="radio-element q4" >
-                                        <label class="sub">2</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p4" value="3" class="radio-element q4" >
-                                        <label class="sub">3</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p4" value="4" class="radio-element q4" >
-                                        <label class="sub">4</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p4" value="5" class="radio-element q4" >
-                                        <label class="sub">5</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p4" value="6+" class="radio-element q4" >
-                                        <label class="sub">6+</label>
-                                    </div>
-                                    <!-- <div class="radio small">
-                                        <input type="radio" name="p4" value="no" class="radio-element has-other" >
-                                        <label class="sub">Otros</label>
-                                    </div>
-                                    <div class="other">
-                                        <input type="tel" pattern="[6-9]|1[0]" maxlength="2" name="p8" value="" class="radio-element" placeholder="#" oninput="this.value=this.value.replace(/[\D]/,'');">
-                                    </div> -->
-                                </div><!-- .group  -->
-                            </div>
-                        </div><!-- .row -->
-                        <div class="row off" id='q5'>
-
-                            <div class="full">
-                                <label>¿Te sabes tu número de celular de memoria?</label>
+                                <label>¿Le avisas a alguien que vas en camino?</label>
                                 <div class="group rows center">
                                     <div class="radio small">
-                                        <input type="radio" name="p5" value="si" class="radio-element q5" required="">
+                                        <input type="radio" name="p2" value="Si" class="radio-element" data-child="1" required="">
+                                        <label class="sub">Si</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p2" value="No" class="radio-element" required="">
+                                        <label class="sub">No</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p2" value="Tal vez" class="radio-element" required="">
+                                        <label class="sub">Tal vez</label>
+                                    </div>
+
+                                </div><!-- .group  -->
+                            </div>
+                        </div><!-- .row -->
+                        <div class="row" data-parent="1">
+                            <div class="full">
+                                <label>¿A quién le avisas?</label>
+                                <div class="group columns">
+                                    <div class="radio small">
+                                        <input type="radio" name="p3" value="Pareja" class="radio-element" required="">
+                                        <label class="sub">Pareja</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p3" value="Padres" class="radio-element" required="">
+                                        <label class="sub">Padres</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p3" value="Jefe o colega de trabajo" class="radio-element" required="">
+                                        <label class="sub">Jefe o colega de trabajo</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p3" value="Hij@s" class="radio-element" required="">
+                                        <label class="sub">Hij@s</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p3" value="Otros" class="radio-element" required="">
+                                        <label class="sub">Otros</label>
+                                    </div>
+                                </div><!-- .group  -->
+                            </div>
+                        </div><!-- .row -->
+                        <div class="row">
+                            <div class="full">
+                                <label>¿Ubicas fácilmente el autobús que tomarás?</label>
+                                <div class="group rows center" >
+                                    <div class="radio small">
+                                        <input type="radio" name="p4" value="Sí" class="radio-element" >
                                         <label class="sub">Sí</label>
                                     </div>
                                     <div class="radio small">
-                                        <input type="radio" name="p5" value="no" class="radio-element q5" required="">
+                                        <input type="radio" name="p4" value="No" class="radio-element" >
                                         <label class="sub">No</label>
                                     </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p4" value="A veces" class="radio-element" >
+                                        <label class="sub">A veces</label>
+                                    </div>
                                 </div><!-- .group  -->
                             </div>
                         </div><!-- .row -->
-                        <div class="row off" id='q6'>
+                        <div class="row">
 
                             <div class="full">
-                                <label>¿Con que frecuencia utilizas tu celular?</label>
-                                <div class="group columns center">
+                                <label>¿Sería de ayuda saber el horario del autobús y cuándo puedes evitar el trafico?</label>
+                                <div class="group rows center">
                                     <div class="radio small">
-                                        <input type="radio" name="p6" value="2-3" class="radio-element q6" required="">
-                                        <label class="sub">2-3 horas diarias</label>
-                                    </div>
-                                    <div class="radio small">
-                                        <input type="radio" name="p6" value="5-6" class="radio-element q6" required="">
-                                        <label class="sub">5-6 horas diarias</label>
+                                        <input type="radio" name="p5" value="si" class="radio-element" required="">
+                                        <label class="sub">Sí</label>
                                     </div>
                                     <div class="radio small">
-                                        <input type="radio" name="p6" value="8" class="radio-element q6" required="">
-                                        <label class="sub">8 horas diarias</label>
+                                        <input type="radio" name="p5" value="no" class="radio-element" required="">
+                                        <label class="sub">No</label>
                                     </div>
                                     <div class="radio small">
-                                        <input type="radio" name="p6" value="9+" class="radio-element q6" required="">
-                                        <label class="sub">9+</label>
+                                        <input type="radio" name="p5" value="Tal vez" class="radio-element" required="">
+                                        <label class="sub">Tal vez</label>
                                     </div>
-                                    <!-- <div class="radio small">
-                                        <input type="radio" name="p7" value="no" class="radio-element has-other" required="">
-                                        <label class="sub">Otros</label>
-                                    </div>
-                                    <div class="other">
-                                        <input type="tel" pattern="[9]|1[8-9]|2[0-4]" maxlength="2" name="p8" value="" placeholder="#" class="radio-element" oninput="this.value=this.value.replace(/[\D]/,'');">
-                                    </div> -->
-
                                 </div><!-- .group  -->
                             </div>
                         </div><!-- .row -->
-                        <div></div>
+                        <div class="row">
+
+                            <div class="full">
+                                <label>¿Alguna vez no has bajado en la parada que te corresponde?</label>
+                                <div class="group columns center">
+                                    <div class="radio small">
+                                        <input type="radio" name="p6" value="Sí" class="radio-element" data-child="2" required="">
+                                        <label class="sub">Sí</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p6" value="No" class="radio-element" required="">
+                                        <label class="sub">No</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p6" value="Tal vez" class="radio-element" required="">
+                                        <label class="sub">Tal vez</label>
+                                    </div>
+                                </div><!-- .group  -->
+                            </div>
+                        </div><!-- .row -->
+                        <div class="row" data-parent="2">
+
+                            <div class="full">
+                                <label>¿Por qué no bajaste a tiempo?</label>
+                                <div class="group columns center">
+                                    <div class="radio small">
+                                        <input type="radio" name="p7" value="Me quede dormid@" class="radio-element" required="">
+                                        <label class="sub">Me quede dormid@</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p7" value="Soy distraid@" class="radio-element" required="">
+                                        <label class="sub">Soy distraid@</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p7" value="No sabía donde bajar" class="radio-element" required="">
+                                        <label class="sub">No sabía donde bajar</label>
+                                    </div>
+                                    <div class="radio small">
+                                        <input type="radio" name="p7" value="Otros" class="radio-element" required="">
+                                        <label class="sub">Otros</label>
+                                    </div>
+                                </div><!-- .group  -->
+                            </div>
+                        </div><!-- .row -->
+                        <div>
+
+                        </div>
 
                         <!-- <div class="row">
                             <input id="rent_form_button" value="Enviar Solicitud" type="submit" style="padding: 20px 15px; margin-bottom: 40px;">
@@ -308,43 +307,6 @@
                 var has_conditional = element.querySelector(".has-conditional")
                 //console.log(element.classList)
 
-                if(element.classList.contains('has-conditional')) {
-                    //console.log(element)
-                    var parent_element = element
-                    var key_radio = parent_element.querySelector('.conditional-value')
-                    var child_id = key_radio.dataset.child
-                    var child_element = document.querySelector('[data-parent="'+child_id+'"]')
-
-                    var conditional_radios = parent_element.querySelectorAll('input[type=radio')
-                    conditional_radios.forEach(function(element3) {
-                        //console.log(element3)
-                        element3.addEventListener('click',function(event) {
-
-                            //console.log(element3)
-                            if (key_radio.checked) {
-                                //console.log('checked')
-                                parent_element.classList.add('on')
-                                child_element.classList.add('on')
-                                var children = child_element.querySelectorAll('input[type=radio')
-                                children.forEach(function(element4) {
-                                    element4.setAttribute('required','required')
-                                })
-                            } else {
-                                //console.log('unchecked')
-                                parent_element.classList.remove('on')
-                                child_element.classList.remove('on')
-                                var children = child_element.querySelectorAll('input[type=radio')
-                                children.forEach(function(element4) {
-                                    element4.removeAttribute('required')
-                                })
-                            }
-                        })
-                    })
-
-
-                }
-
-
                 radios.forEach(function(element2) {
 
 
@@ -384,38 +346,47 @@
             })
 
             let textQIdx = document.querySelector(`.qidx`);
+            let numQuestions = 0;
+            let numQuestionsReal = 0;
+            let arrayParent = [];
 
             // q = question
             function handleQuestion(index, idx) {
 
                 let qIndex = index;
                 let qIdx = idx;
+                textQIdx.textContent = idx;
+                
 
                 let qActive = document.querySelectorAll(`.q${qIndex}`);
 
-                qActive.forEach(q => {
-                    q.addEventListener('change', e => {
-                        setTimeout(() => {
-
-                            if (qIndex == 6) {
+                qActive.forEach(function (q) {
+                    q.addEventListener('change', function (e) {
+                        setTimeout(function (params) {
+                            if (numQuestionsReal == qIndex) {
                                 sendForm();
                                 return
                             }
 
-                            document.querySelector(`#q${qIndex}`).classList.add('off');
-                            if (qIndex == 3) {
-                                let { value } = e.target;
+                            document.querySelector(`.row[data-id='${qIndex}']`).classList.add('off');
 
-                                if (value == 'si') {
+                            if (arrayParent.find(function (e) { return e == qIndex })) {
+                                if (q.dataset.child != undefined) {
                                     --qIdx;
                                 } else {
                                     qIndex++;
+                                    console.log(numQuestionsReal, qIndex);
+
+                                    if (numQuestionsReal == qIndex) {
+                                        sendForm();
+                                        return
+                                    }
                                 }
                             }
-                            document.querySelector(`#q${++qIndex}`).classList.remove('off');
 
-                            textQIdx.textContent = ++qIdx;
-                            handleQuestion(qIndex, qIdx);
+                            document.querySelector(`.row[data-id='${++qIndex}']`).classList.remove('off');
+
+                            handleQuestion(qIndex, ++qIdx);
 
                         }, 500);
                     });
@@ -425,12 +396,50 @@
             function sendForm() {
                 button.classList.add("loading");
                 button.value = "Cargando... ";
-                setTimeout(() => {
+                setTimeout(function () {
                     button.click();
                 }, 2000);
             }
 
-            handleQuestion(1, 1);
+            function initFrom() {
+
+                let contents = document.querySelectorAll('.row')
+                let numQ = 1;
+                
+                contents.forEach(function (element, index) {
+
+                    let idx = 1;
+
+                    if (index != 0) {
+                        element.classList.add('off');
+                    }
+                    element.dataset.id = ++index;
+
+                    document.querySelectorAll(`.${element.classList[0]}[data-id='${index}'] input`).forEach(function (input) {
+                        input.classList.add(`q${idx}`);
+                    });
+
+                    ++idx;
+
+                    if (element.dataset.parent != undefined) {
+                        arrayParent.push(numQ)
+                        // numQ = numQ + parseInt(element.dataset.parent);
+                        // console.log(numQ);
+                    } else {
+                        ++numQ;
+                    }
+
+                });
+
+                numQuestionsReal = contents.length;
+                numQuestions = numQ;
+                document.querySelector(`.qLength`).textContent = numQuestions;
+
+                handleQuestion(1, 1);                
+            }
+
+            initFrom();
+
         });
 
     </script>
