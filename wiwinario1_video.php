@@ -385,10 +385,10 @@
 
             function sendForm() {
                 setTimeout(function () {
-                    document.querySelector(`.loading`).classList.remove('off');
-                    document.querySelector(`.cuestionario`).classList.add('off');
                     form.submit()
                 }, 2000);
+                document.querySelector(`.loading`).classList.remove('off');
+                document.querySelector(`.cuestionario`).classList.add('off');
             }
 
             function initFrom() {
