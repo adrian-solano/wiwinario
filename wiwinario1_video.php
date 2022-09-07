@@ -267,7 +267,7 @@
                     </div><!-- .landing-body -->
                     <div class='loading off' style='height: 100%; align-items: center; display: flex;'>
                         <div>
-                            <img src="./imgs/loading.png" alt="" style='width: 90%;'>
+                            <img src="./imgs/loading.png" alt="" style='width: 100%;'>
                         </div>
                     </div>
                 </span><!-- .screen-wrap -->

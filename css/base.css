@@ -765,7 +765,8 @@ input[type=text], input[type=button] {
   flex-direction: column;
   width: 100%;
   padding: 20px;
-  height: 100%;
+  height: auto;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 .main.master .screen .screen-wrap .cuestionario h2 {
@@ -1939,7 +1940,7 @@ input[type=text], input[type=button] {
   display: block;
   width: 100%;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Gotham Narrow";
   padding-bottom: 5px;
   text-transform: uppercase;
