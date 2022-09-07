@@ -254,6 +254,7 @@
                                 </div><!-- .group  -->
                             </div>
                         </div><!-- .row -->
+
                         <div>
 
                         </div>
@@ -264,9 +265,18 @@
 
 
                     </div><!-- .landing-body -->
+                    <div class='loading off' style='height: 100%; align-items: center; display: flex;'>
+                        <div>
+                            <img src="./imgs/loading.png" alt="" style='width: 90%;'>
+                        </div>
+                    </div>
                 </span><!-- .screen-wrap -->
             </div><!-- .screen -->
         </section><!-- .section-middle -->
+
+        <section class="section-footer off" style='position: fixed; bottom: 0; left: 0; right: 0;'>
+            <input type="submit" class="big-fat-button" value="Click Aquí para Continuar"/><!-- .big-fat-button -->
+        </section>
 
     </form><!-- .main -->
 
@@ -324,22 +334,6 @@
                 })
             })
 
-            //SUBMIT FORM
-            // button.addEventListener('click',function(event) {
-            //     event.preventDefault();
-
-            //     //alert(Form.checkValidity())
-            //     if (form.checkValidity() != false && !button.hasAttribute('disabled')) {
-            //         button.classList.add("loading");
-            //         button.value = "Cargando... ";
-            //         button.setAttribute('disabled','disabled')
-            //         form.submit()
-
-            //     } else {
-            //         form.reportValidity()
-            //     }
-            // })
-
             let textQIdx = document.querySelector(`.qidx`);
             let numQuestions = 0;
             let numQuestionsReal = 0;
@@ -390,12 +384,10 @@
             }
 
             function sendForm() {
-                // button.classList.add("loading");
-                // button.value = "Cargando... ";
                 setTimeout(function () {
-                    // button.click();
+                    document.querySelector(`.loading`).classList.remove('off');
+                    document.querySelector(`.cuestionario`).classList.add('off');
                     form.submit()
-                    // console.log(form.checkValidity());
                 }, 2000);
             }
 
