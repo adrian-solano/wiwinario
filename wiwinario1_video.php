@@ -3,7 +3,7 @@
 // session_start();
 // include("../rastreador.php");
 
-##aqui enviamos la impresion
+// ##aqui enviamos la impresion
 // $macu=$_COOKIE['wiwi_mac'];
 // $called=$_COOKIE['wiwi_node'];
 // $wiwichallenge=$_COOKIE['wiwi_challenge'];
@@ -15,7 +15,7 @@
 // $pantalla="$campana"."_1";
 // $funel='1';
 
-// impresion_track('FORMULARIO', 'IMPRESION', 'formulario_wiwinario1', $cliente, $campana, $pantalla, $funel, $macu, $called,$wiwichallenge);
+// impresion_track('FORMULARIO', 'IMPRESION', 'formulario_wiwinario2', $cliente, $campana, $pantalla, $funel, $macu, $called,$wiwichallenge);
 
 ##terminamos la impresion
 
@@ -60,20 +60,20 @@
                 <span class="client-logo">
                     <img src="imgs/logo-text.svg">
                 </span>
-                <div class="">
+                <div class="client-info">
                     <span class="client-name" >wiwi</span>
                     <span class="client-hashtag">#cuestionario</span>
                 </div>
             </section><!-- .subheader -->
         </section><!-- .section header -->
 
-        <section class="section-middle">
+        <section class="section-middle" style='height: 100%;'>
             <div class="screen">
                 <span class="screen-wrap scroll">
                     <div class="landing-form cuestionario" id="formulario">
 
                         <div>
-                            <h2>Primer acercamiento</h2>
+                            <h2>Ayúdanos contestando las siguientes preguntas</h2>
                             <div class='count-question'>
                                 <p>Pregunta <span class='qidx'></span> de <span class='qLength'></span></p>
                             </div>
@@ -92,7 +92,6 @@
                         <input type="hidden" name="macuser" id="macuser" value="<?php echo $_SESSION['macu']?>">
                         <input type="hidden" name="nodeuser" id="nodeuser" value="<?php echo $_SESSION['called']?>">
                         <input type="hidden" name="wiwichallenge" id="wiwichallenge" value="<?php echo $_SESSION['wiwichallenge']?>">
-
 
                         <input type="hidden" name="elemento_conceder" id="elemento_conceder" value="NA">
                         <input type="hidden" name="pantalla_conceder" id="pantalla_conceder" value="34_2">
@@ -235,7 +234,7 @@
 
                             <div class="full">
                                 <label>¿Por qué no bajaste a tiempo?</label>
-                                <div class="group columns center">
+                                <div class="group columns">
                                     <div class="radio small">
                                         <input type="radio" name="p7" value="Me quede dormid@" class="radio-element" required="">
                                         <label class="sub">Me quede dormid@</label>
@@ -268,10 +267,6 @@
                 </span><!-- .screen-wrap -->
             </div><!-- .screen -->
         </section><!-- .section-middle -->
-
-        <section class="section-footer">
-            <input type="submit" class="big-fat-button" value="Click Aquí para Continuar"/><!-- .big-fat-button -->
-        </section><!-- section-footer -->
 
     </form><!-- .main -->
 
@@ -330,20 +325,20 @@
             })
 
             //SUBMIT FORM
-            button.addEventListener('click',function(event) {
-                event.preventDefault();
+            // button.addEventListener('click',function(event) {
+            //     event.preventDefault();
 
-                //alert(Form.checkValidity())
-                if (form.checkValidity() != false && !button.hasAttribute('disabled')) {
-                    button.classList.add("loading");
-                    button.value = "Cargando... ";
-                    button.setAttribute('disabled','disabled')
-                    form.submit()
+            //     //alert(Form.checkValidity())
+            //     if (form.checkValidity() != false && !button.hasAttribute('disabled')) {
+            //         button.classList.add("loading");
+            //         button.value = "Cargando... ";
+            //         button.setAttribute('disabled','disabled')
+            //         form.submit()
 
-                } else {
-                    form.reportValidity()
-                }
-            })
+            //     } else {
+            //         form.reportValidity()
+            //     }
+            // })
 
             let textQIdx = document.querySelector(`.qidx`);
             let numQuestions = 0;
@@ -356,7 +351,7 @@
                 let qIndex = index;
                 let qIdx = idx;
                 textQIdx.textContent = idx;
-                
+
 
                 let qActive = document.querySelectorAll(`.q${qIndex}`);
 
@@ -395,11 +390,12 @@
             }
 
             function sendForm() {
-                button.classList.add("loading");
-                button.value = "Cargando... ";
+                // button.classList.add("loading");
+                // button.value = "Cargando... ";
                 setTimeout(function () {
                     // button.click();
                     form.submit()
+                    // console.log(form.checkValidity());
                 }, 2000);
             }
 
@@ -408,8 +404,8 @@
                 let contents = document.querySelectorAll('.row')
                 let numQ = 1;
 
-                console.log(contents);
                 
+
                 contents.forEach(function (element, index) {
 
                     let idx = 1;
@@ -437,7 +433,7 @@
                 numQuestionsReal = contents.length;
                 document.querySelector(`.qLength`).textContent = numQuestions;
 
-                handleQuestion(1, 1);                
+                handleQuestion(1, 1);
             }
 
             initFrom();
