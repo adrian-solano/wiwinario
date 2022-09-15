@@ -75,7 +75,7 @@
                         <div>
                             <h2>Ayúdanos contestando las siguientes preguntas</h2>
                             <div class='count-question'>
-                                <p>Pregunta <span class='qidx'></span> de <span class='qLength'></span></p>
+                                <p>Pregunta <span class='qIdx'></span> de <span class='qLength'></span></p>
                             </div>
                         </div>
 
@@ -334,6 +334,8 @@
                 })
             })
 
+            /*
+
             let textQIdx = document.querySelector(`.qidx`);
             let numQuestions = 0;
             let numQuestionsReal = 0;
@@ -430,9 +432,13 @@
 
             initFrom();
 
+            */
+
         });
 
     </script>
+
+    <script src="index.js"></script>
 
 </body>
 
