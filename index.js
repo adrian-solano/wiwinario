@@ -1,9 +1,24 @@
-let contents = document.querySelectorAll('.row:not([data-parent])');
+let contents = [];
 let contentsOptional = document.querySelectorAll('.row[data-parent]');
+let contentsCount = document.querySelectorAll('.row');
 let btnFormSubmit = document.querySelector('#btn_form_submit');
 let textQuestionIndex = document.querySelector(`.qIdx`);
 let contentBtnSubmit = document.querySelector(`.section-footer`);
 let qIdx = 1;
+
+contentsCount.forEach(function ( content ) {
+    
+    if (content.dataset.parent != undefined) {
+
+        if (content.dataset.count != undefined) {
+            contents.push(content);
+        }
+
+    } else {
+        contents.push(content);
+    }
+    
+});
 
 document.querySelector(`.qLength`).textContent = contents.length;
 textQuestionIndex.textContent = qIdx;
@@ -20,6 +35,7 @@ function initForm() {
 
         document.querySelectorAll(`[data-id='${index}'] input`).forEach(function ( input ) {
             input.classList.add(`q${index}`);
+            input.dataset.inputId = index;
         });
 
     });
@@ -78,9 +94,12 @@ function selectOption( question ) {
 
 }
 
-function handleQuestion( contentId ) {
+function handleQuestion( child, contentId ) {
 
     isContentIdUndefiend(contentId);
+    if (contentId == undefined || contentId < contents.length) {
+        ++qIdx
+    }
     document.querySelector(`[data-id='${++qIdx}']`).classList.remove('off');
     textQuestionIndex.textContent = qIdx;
     handleForm();
@@ -89,8 +108,16 @@ function handleQuestion( contentId ) {
 
 function handleQuestionOptional( child, contentId ) {
 
+    let contentParentId = document.querySelector(`[data-parent-id='${child}']`);
+
     isContentIdUndefiend(contentId);
-    document.querySelector(`[data-parent-id='${child}']`).classList.remove('off');
+    contentParentId.classList.remove('off');
+
+    if (contentParentId.dataset.count != undefined) {
+        qIdx++;
+        textQuestionIndex.textContent = qIdx;
+    }
+
     handleFormOptional( child );
 
 }
@@ -129,7 +156,7 @@ function clickBtn( question ) {
 
 function selectQuestion( question ) {
     
-    if (contents.length == qIdx) {
+    if (contents.length == qIdx && question.dataset.child == undefined) {
             
         sendForm();
 
@@ -140,7 +167,7 @@ function selectQuestion( question ) {
             if (question.dataset.child != undefined) {
                 handleQuestionOptional(question.dataset.child, question.dataset.contentId)
             } else {
-                handleQuestion(question.dataset.contentId)
+                handleQuestion(question, question.dataset.contentId)
             }
 
         }, 500);  
