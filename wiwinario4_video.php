@@ -186,7 +186,7 @@
                                 <label>¿Conoces algún programa de lealtad que te permite acumular puntos?</label>
                                 <div class="group rows center">
                                     <div class="radio small">
-                                        <input type="radio" name="p5" value="Sí" data-child="3" class="radio-element" required="">
+                                        <input type="radio" name="p5" value="Sí" class="radio-element" required="">
                                         <label class="sub">Sí</label>
                                     </div>
                                     <div class="radio small">
@@ -235,7 +235,7 @@
             </div><!-- .screen -->
         </section><!-- .section-middle -->
 
-        <section class="section-footer off" style='position: fixed; bottom: 0; left: 0; right: 0;'>
+        <section class="section-footer off">
             <input type="submit" id='btn_form_submit' class="big-fat-button" value="Click Aquí para Continuar"/>
         </section>
     <!-- 
